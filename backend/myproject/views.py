@@ -1,5 +1,4 @@
-
 from django.shortcuts import render
 
-def main_page(request):
-    return render(request, 'main_page.html')
+def index(request):
+    return render(request, 'index.html')  # React의 index.html 렌더링

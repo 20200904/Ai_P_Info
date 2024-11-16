@@ -48,7 +48,3 @@ def upload_and_analyze_pdf(request):
         form = PolicyDocumentForm()
     return render(request, 'pdf_processor/upload_pdf.html', {'form': form})
 
-# 분석 결과 뷰
-def analysis_result(request, pk):
-    policy_doc = PolicyDocument.objects.get(pk=pk)
-    return render(request, 'pdf_processor/analysis_result.html', {'policy_doc': policy_doc})
